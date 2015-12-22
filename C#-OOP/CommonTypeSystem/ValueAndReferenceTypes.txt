@@ -1,0 +1,30 @@
+
+		Value and Reference Types
+
+
+- Value Types
+Value types are stored on stack.
+A data type is a value type if it holds the data within its own memory allocation. Value types include the following:
+Numeric types(Integral, floating-point and decimal), boolean, char, date, all structures, even if their members are reference types, enumerations.
+Every structure is a value type, even if it contains reference type members. For this reason, value types such as Char and Integer are implemented by .NET Framework structures.
+A value type does not need extra garbage collection. It gets garbage collected together with the instance it lives in. Local variables in methods get cleaned up upon method leave.
+
+- Reference Types
+Stored on heap.
+A reference type contains a pointer to another memory location that holds the data. Reference types include the following:
+String, all arrays, even if their elements are value types, class types such as Form, delegates.
+A class is a reference type. For this reason, reference types such as Object and String are supported by .NET Framework classes.
+Holds a memory address of a value not value.
+When u pass a reference variable to a method and it changes it indeed changes the original value whereas in value types a copy of the given variable is taken and that's value is changed.
+When the size of variable is bigger reference type is good
+As class comes in this type of variable oops is promoted so it gives reusability those oop benifits
+Note that every array is a reference type, even if its members are value types.
+
+Out and Ref
+The ref keyword causes an argument to be passed by reference, not by value.
+The effect of passing by reference is that any change to the parameter in the called method is reflected in the calling method. 
+For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers,
+then the caller’s local variable or the array element now refer to the new object.
+
+The out keyword causes arguments to be passed by reference. This is like the ref keyword, except that ref requires that the variable be initialized before it is passed.
+To use an out parameter, both the method definition and the calling method must explicitly use the out keyword. 
