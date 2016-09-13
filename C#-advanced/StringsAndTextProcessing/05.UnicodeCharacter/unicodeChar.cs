@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 class unicodeChar
 {
-        static void Main()
+    static void Main()
+    {
+        string input = Console.ReadLine();
+        string unicode = String.Empty;
+        foreach (char i in input)
         {
-            string input = Console.ReadLine();
-            string unicode = String.Empty;
-            foreach (char i in input)
-            {
-                unicode += "\\u" + ((int)i).ToString("X4");
-            }
-            Console.WriteLine(unicode);
+            unicode += "\\u" + ((int)i).ToString("X4");
         }
+        Console.WriteLine(unicode);
+    }
 }
