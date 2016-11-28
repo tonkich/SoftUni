@@ -1,0 +1,15 @@
+[submodule "Algorithms"]
+    path = Algorithms
+    url = https://github.com/vrabeca/Softuni/Algorithms.git
+[submodule "C#-highQualityCode"]
+    path = C#-highQualityCode
+    url = https://github.com/vrabeca/Softuni/C#-highQualityCode.git
+[submodule "C#-OOP"]
+    path = C#-OOP
+    url = https://github.com/vrabeca/Softuni/C#-OOP.git
+[submodule "Java-fundamentals"]
+    path = Java-fundamentals
+    url = https://github.com/vrabeca/Softuni/Java-fundamentals.git
+[submodule "MSSQL and EntityFramework"]
+    path = MSSQL and EntityFramework
+    url = https://github.com/vrabeca/Softuni/MSSQL and EntityFramework.git
