@@ -1,0 +1,3 @@
+C# is a programming language, and .NET is a framework. .NET has various languages under it. C# is one of the language in .NET.
+The framework defines the rules and supporting libraries that other languages shall use.
+It also helps you to call variable written in another language to be used in a different language.
