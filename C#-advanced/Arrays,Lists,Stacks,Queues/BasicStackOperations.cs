@@ -1,0 +1,51 @@
+namespace Application1
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack<int> stack = new Stack<int>();
+            string input = Console.ReadLine();
+            if (!string.IsNullOrEmpty(input))
+            {
+                int[] nums = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(p => Convert.ToInt32(p)).ToArray();
+                int N = nums[0];
+                int S = nums[1];
+                int X = nums[2];
+                string inputTwo = Console.ReadLine();
+                int[] arr = inputTwo.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(p => Convert.ToInt32(p)).ToArray();
+                for (int i = 0; i != N; i++)
+                {
+                    stack.Push(arr[i]);
+                }
+
+
+                for (int j = 0; j != S; j++)
+                {
+                    stack.Pop();
+                    if (stack.Count == 0)
+                    {
+                        Console.WriteLine(0);
+                        return;
+                    }
+                }
+
+                if (stack.Contains(X))
+                {
+                    Console.WriteLine("true");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine(stack.Min());
+                    return;
+                }
+            }
+        }
+    }
+}
