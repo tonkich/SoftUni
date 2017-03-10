@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        @font-face { font-family: BankGothic; src: url('BankGothic.ttf'); } 
+    </style>
+    <meta charset="utf-8">
+    <title>Fresh Fruits &amp; Salads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1 style="font-family: BankGothic"><b>Favorites</b></h1>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#">Banana</a></li>
+                    <li><a href="#">Watermelon</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Salads</a></li>
+                </ul>
+                <br>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                        <br>
+                        <input type="submit" value="Search Fruits" id="Search fruits" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-9">
+                <div class="alert alert-danger alert-dismissable">
+                      <span class="close" data-dismiss="alert">&times;</span>
+                <strong>Ops!</strong> Have you went out today to do some walking today?
+                </div>
+                <h1 style="font-family: BankGothic"><b>Fresh Fruits &amp; Salads</b></h1>
+                <blockquote>
+                    <p>The best fruits and salads can be found here.
+                        <br>
+                        <br><small>G. Ramsey</small></p>
+                </blockquote>
+                <h1 style="font-family: BankGothic"><b>Nutrition info</b></h1>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Fruit</th>
+                            <th>Vitamins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Banana</td>
+                            <td>A,C,B6</td>
+                        </tr>
+                        <tr>
+                            <td>Watermelon</td>
+                            <td>A,C</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>A,C</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    In elementum, neque at semper venenatis, eros velit venenatis nulla, sed bibendum ipsum lectus pharetra tellus. Aenean finibus
+                    ipsum non dui accumsan, id lobortis dolor tincidunt. In sed imperdiet lectus, at dignissim tortor. Etiam
+                    rutrum nibh a neque porttitor vulputate. Donec ut nisi eu leo tempus lacinia in malesuada lorem. Pellentesque
+                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam a euismod arcu.
+                    Phasellus luctus sollicitudin neque, et bibendum risus consequat id. Aliquam erat volutpat. Curabitur.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="card col-lg-3 col-lg-offset-3"><img class="card-img-top" src="./images/apple.jpg" max-height="250px" max-width="250px"><div class="class-block"><p class="card-text">An apple</p></div></div>
+            <div class="card col-lg-3 "><img class="card-img-top" src="./images/banana.jpg" max-height="250px" max-width="250px"><div class="class-block"><p class="card-text">A banana</p></div></div>
+            <div class="card col-lg-3 "><img class="card-img-top" src="./images/watermelon.jpg" max-height="250px" max-width="250px"><div class="class-block"><p class="card-text">A watermelon</p></div></div>
+        </div>
+    </div>
+    <script type="text/javascript" href="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" href="./js/bootstrap.js"></script>
+</body>
+
+</html>
